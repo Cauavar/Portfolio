@@ -306,7 +306,7 @@ section.portfolio .flex{
     background-color: #00ff08;
     background-size: cover;
     background-position: 100% 0%;
-    transition: 8s;
+    transition: 5s;
     border-radius: 40px;
     cursor: pointer;
     position: relative;
