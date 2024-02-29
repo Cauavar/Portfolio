@@ -88,10 +88,18 @@ header .logo img {
 
 /* ESTILO DO MENU MOBILE */
 
+
+@media (max-width: 1020px) {
+    .btn-abrir-menu {
+        display: block; 
+    }
+
+
 .btn-abrir-menu svg{
     color: #00ff08;
     font-size: 40px;
     cursor: pointer;
+}
 }
 
 .menu-mobile{
