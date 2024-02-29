@@ -1,50 +1,52 @@
-/* ESTILO GERAL*/
-*{
+/* ESTILO GERAL */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', 'sans-serif';
+    color: #000; 
 }
 
-body{
-    background-color: #000;
+body {
+    background-color: #E1E7F2; 
     height: 100vh;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.interface{
+.interface {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.btn-contato button{
+.btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #00ff08;
+    background-color: #32AFB2; 
     border: 0;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
 }
 
-button:hover, form .btn-enviar input[type=submit]:hover{
-    box-shadow: 0px 0px 8px #00ff0868;
+button:hover,
+form .btn-enviar input[type=submit]:hover {
+    box-shadow: 0px 0px 8px #32AFB268; 
     transform: scale(1.05);
 }
 
-h2.titulo{
-    color: #fff;
+h2.titulo {
+    color: #000; 
     font-size: 38px;
     text-align: center;
     font-weight: 700;
 }
 
-h2.titulo span{
-    color: #00ff08;
+h2.titulo span {
+    color: #32AFB2; 
 }
 
 /* ESTILO CABEÇALHO */
@@ -88,22 +90,26 @@ header .logo img {
 
 /* ESTILO DO MENU MOBILE */
 
-
-@media (max-width: 1020px) {
+@media (max-width: 726px) {
     .btn-abrir-menu {
-        display: block; 
+        display: block;
     }
 
-
-.btn-abrir-menu svg{
-    color: #00ff08;
-    font-size: 40px;
-    cursor: pointer;
+    .btn-abrir-menu svg {
+        color: #32AFB2;
+        font-size: 40px;
+        cursor: pointer;
+    }
 }
+
+@media (min-width: 727px) {
+    .btn-abrir-menu {
+        display: none;
+    }
 }
 
-.menu-mobile{
-    background-color: #000;
+.menu-mobile {
+    background-color: #E1E7F2;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -114,43 +120,42 @@ header .logo img {
     transition: .5s;
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu{
-    display: block;    
+.menu-mobile.abrir-menu ~ .overlay-menu {
+    display: block;
 }
 
-.menu-mobile nav ul{
+.menu-mobile nav ul {
     text-align: right;
-
 }
 
-.menu-mobile nav li a{
-    color: #fff;
+.menu-mobile nav li a {
+    color: #000;
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
     display: block;
 }
 
-.menu-mobile nav li a:hover{
-    background-color: #00ff08;
-    color: #000;
+.menu-mobile nav li a:hover {
+    background-color: #32AFB2;
+    color: #fff;
 }
 
-.menu-mobile .btn-fechar{
+.menu-mobile .btn-fechar {
     padding: 20px 5%;
 }
 
-.menu-mobile .btn-fechar svg{
-    color: #00ff08;
+.menu-mobile .btn-fechar svg {
+    color: #32AFB2;
     font-size: 30px;
     cursor: pointer;
 }
 
-.overlay-menu{
+.overlay-menu {
     background-color: #000000a7;
     width: 100%;
     height: 100%;
@@ -160,7 +165,6 @@ header .logo img {
     z-index: 88888;
     display: none;
 }
-
 
 
 /* ESTILO DO TOPO DO SITE */
@@ -177,18 +181,18 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1{
-    color: #fff;
+    color: #000;
     font-size: 42px;
     line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site h1 span{
-    color: #00ff08;
+    color: #32AFB2;
     font-size: 84px;
 }
 
 .topo-do-site .txt-topo-site p{
-    color: #fff;
+    color: #000;
     margin: 40px;
 }
 
@@ -218,7 +222,7 @@ section.especialidades .flex{
 }
 
 .especialidades .especialidades-box{
-    color: #fff;
+    color: #000;
     padding: 40px;
     margin-top: 45px;
     border-radius: 20px;
@@ -227,14 +231,14 @@ section.especialidades .flex{
 }
 
 .especialidades .especialidades-box:hover{
-    box-shadow: 0 0 18px #ffffff78;
+    box-shadow: 0 0 18px #3b3a3a78;
     transform: scale(1.05);
 }
 
 .especialidades .especialidades-box svg {
     width: 70px; 
     height: 70px; 
-    fill: #00ff08; 
+    fill: #32AFB2; 
     margin-bottom: 10px; 
 }
 
@@ -257,7 +261,7 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre{
-    color: #fff;
+    color: #000;
 }
 
 .sobre .txt-sobre h2{
@@ -267,7 +271,7 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre h2 span{
-    color: #00ff08;
+    color: #32AFB2;
     display: block;
 }
 
@@ -281,7 +285,7 @@ section.sobre .flex{
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #00ff08;
+    background-color: #32AFB2;
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
@@ -303,7 +307,7 @@ section.portfolio .flex{
 .img-port{
     width: 360px;
     height: 460px;
-    background-color: #00ff08;
+    background-color: #32AFB2;
     background-size: cover;
     background-position: 100% 0%;
     transition: 5s;
@@ -378,7 +382,7 @@ form .btn-enviar{
 form .btn-enviar input[type=submit]{
     width: 100%;
     height: 80px;
-    background-color: #00ff08;
+    background-color: #32AFB2;
     color: #000;
     font-weight: 700;
     cursor: pointer;
@@ -401,16 +405,16 @@ footer .line-footer{
 }
 
 .borda{
-    border-top: 2px solid #00ff08;
+    border-top: 2px solid #32AFB2;
 }
 
 footer svg{
-    color: #00ff08;
+    color: #32AFB2;
     font-size: 22px;
 }
 
 footer .line-footer p a{
-    color: #fff;
+    color: #000;
 }
 
 footer img{
