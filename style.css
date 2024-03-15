@@ -90,7 +90,7 @@ header .logo img {
 
 /* ESTILO DO MENU MOBILE */
 
-@media (max-width: 726px) {
+@media (max-width: 1020px) {
     .btn-abrir-menu {
         display: block;
     }
@@ -102,7 +102,7 @@ header .logo img {
     }
 }
 
-@media (min-width: 727px) {
+@media (min-width: 1020px) {
     .btn-abrir-menu {
         display: none;
     }
